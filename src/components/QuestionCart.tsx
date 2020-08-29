@@ -29,7 +29,7 @@ const QuestionCart:React.FC<Props> = ({
                 {answer.map((item,index)=>{
                     return(
                         <div key={index+Math.random()}>
-                            <button disabled={userAnswer}>
+                            <button disabled={userAnswer} onClick={callback}>
                                 <span dangerouslySetInnerHTML={{__html:item}}></span>
                             </button>
                         </div>
